@@ -1,0 +1,10 @@
+CREATE USER <user_name>@<host>
+         IDENTIFIED WITH mysql_native_password BY 
+GRANT ALL PRIVILEGES ON <database_name>.* TO <database_user>@<database_host>
+DROP USER IF EXISTS <user_name>@<database_host>
+
+CREATE TABLE <table_name> ( <field_values> );
+INSERT INTO <table_name>( <fields_to_insert> )  VALUES ( <values_to_insert> );
+DROP TABLE IF EXISTS <table_name>; 
+SELECT <column_names> FROM <table_name> WHERE <column_name> = <value_name>;
+
